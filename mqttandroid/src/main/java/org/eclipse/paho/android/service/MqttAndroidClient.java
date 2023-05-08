@@ -24,6 +24,7 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.SparseArray;
 
 import org.eclipse.paho.client.mqttv3.DisconnectedBufferOptions;
@@ -57,7 +58,7 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 
 /**
  * Enables an android application to communicate with an MQTT server using non-blocking methods.
